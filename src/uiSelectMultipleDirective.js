@@ -64,7 +64,7 @@ uis.directive('uiSelectMultiple', ['uiSelectMinErr','$timeout', function(uiSelec
 
       ctrl.getPlaceholder = function(){
         //Refactor single?
-        if($select.selected && $select.selected.length) return;
+        //if($select.selected && $select.selected.length) return;
         return $select.placeholder;
       };
 
@@ -178,7 +178,7 @@ uis.directive('uiSelectMultiple', ['uiSelectMinErr','$timeout', function(uiSelec
           return;
         }
         $select.selected.push(item);
-        var locals = {};        
+        var locals = {};
         locals[$select.parserResult.itemName] = item;
 
         $timeout(function(){
@@ -261,11 +261,11 @@ uis.directive('uiSelectMultiple', ['uiSelectMinErr','$timeout', function(uiSelec
                 } else {
                   return curr;
                 }
-                
+
               } else {
                 // If nothing yet selected, select last item
-                return last;  
-              }              
+                return last;
+              }
               break;
             case KEY.DELETE:
               // Remove selected item and select next item
