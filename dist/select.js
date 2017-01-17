@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.19.6 - 2017-01-17T19:49:56.214Z
+ * Version: 0.20.0 - 2017-01-17T21:18:34.934Z
  * License: MIT
  */
 
@@ -1009,11 +1009,11 @@ uis.controller('uiSelectCtrl',
     ctrl.sizeSearchInput();
   }, 50);
 
-  angular.element($window).bind('resize', onResize);
+  //angular.element($window).bind('resize', onResize);
 
   $scope.$on('$destroy', function() {
     ctrl.searchInput.off('keyup keydown tagged blur paste');
-    angular.element($window).off('resize', onResize);
+    //angular.element($window).off('resize', onResize);
   });
 
   $scope.$watch('$select.activeIndex', function(activeIndex) {
