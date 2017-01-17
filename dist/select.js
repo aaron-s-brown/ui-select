@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.20.0 - 2017-01-17T21:18:34.934Z
+ * Version: 0.20.1 - 2017-01-17T21:28:11.423Z
  * License: MIT
  */
 
@@ -1005,9 +1005,9 @@ uis.controller('uiSelectCtrl',
     }
   }
 
-  var onResize = $$uisDebounce(function() {
-    ctrl.sizeSearchInput();
-  }, 50);
+  //var onResize = $$uisDebounce(function() {
+  //  ctrl.sizeSearchInput();
+  //}, 50);
 
   //angular.element($window).bind('resize', onResize);
 

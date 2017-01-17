@@ -732,9 +732,9 @@ uis.controller('uiSelectCtrl',
     }
   }
 
-  var onResize = $$uisDebounce(function() {
-    ctrl.sizeSearchInput();
-  }, 50);
+  //var onResize = $$uisDebounce(function() {
+  //  ctrl.sizeSearchInput();
+  //}, 50);
 
   //angular.element($window).bind('resize', onResize);
 
